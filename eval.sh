@@ -1,0 +1,11 @@
+! python /code/tf/models/research/slim/eval_image_classifier.py \
+	--alsologtostderr \
+	--checkpoint_path=train/model.ckpt-1000000 \
+	--dataset_dir=dataset/ \
+	--dataset_name=visualwakewords \
+	--dataset_split_name=val \
+	--model_name=mobilenet_v1_025 \
+	--preprocessing_name=mobilenet_v1 \
+	--input_grayscale=True \
+	--use_grayscale=True \
+	--train_image_size=96
