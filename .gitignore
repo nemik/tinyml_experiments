@@ -1,1 +1,10 @@
 dataset
+train/
+*.tflite
+*.pb
+*.h5
+gmodels/
+__pycache__/
+keras_model/
+train*/
+keras_log

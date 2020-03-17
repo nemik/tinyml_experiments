@@ -1,6 +1,6 @@
 ! python /code/tf/models/research/slim/eval_image_classifier.py \
 	--alsologtostderr \
-	--checkpoint_path=train/model.ckpt-1000000 \
+	--checkpoint_path=vww_96_grayscale/model.ckpt-16563 \
 	--dataset_dir=dataset/ \
 	--dataset_name=visualwakewords \
 	--dataset_split_name=val \

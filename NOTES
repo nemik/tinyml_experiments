@@ -1,0 +1,15 @@
+https://colab.research.google.com/github/tensorflow/model-optimization/blob/master/tensorflow_model_optimization/g3doc/guide/quantization/training_comprehensive_guide.ipynb
+
+https://blog.tensorflow.org/2020/04/quantization-aware-training-with-tensorflow-model-optimization-toolkit.html
+
+
+rain.record-00025-of-00100
+{'background': 29590, 'bird': 209}
+
+        doing dataset/train.record-00013-of-00100
+dataset/train.record-00013-of-00100
+{'background': 29887, 'bird': 213}
+done
+{'background': 29887, 'bird': 213}
+
+this is badly unbalanced

@@ -24,7 +24,9 @@ def representative_dataset_gen():
     if count > 300:
         break
 
-converter = tf.lite.TFLiteConverter.from_frozen_graph('vww_96_grayscale_frozen.pb', ['input'], ['MobilenetV1/Predictions/Reshape_1'])
+
+m = "keras_birds/keras_birds_mobilenet_v1_model-final.h5"
+converter = tf.lite.TFLiteConverter.from_keras_model_file(m)
 """
 #converter.optimizations = [tf.lite.Optimize.OPTIMIZE_FOR_SIZE]
 converter.optimizations = [tf.lite.Optimize.DEFAULT]
@@ -42,4 +44,4 @@ converter.inference_output_type = tf.int8
 
 converter.representative_dataset = representative_dataset_gen
 tflite_quant_model = converter.convert()
-open("vww_96_grayscale_quantized.tflite", "wb").write(tflite_quant_model)
+open(m.replace(".h5", "_v1_c.tflite"), "wb").write(tflite_quant_model)
